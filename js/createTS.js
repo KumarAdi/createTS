@@ -1,14 +1,6 @@
-/** starts the game once html has loaded */
-function init() {
-    var canvas = document.getElementById('gameCanvas');
-    canvas.style.background = '#000';
-    var game = new Game(canvas);
-}
-/**Class representing the Game */
 var Game = (function () {
     function Game(canvas, width, height) {
         var _this = this;
-        /** Resizes the canvas tot the screen*/
         this.resizeCanvas = function () {
             var windowRes = new Vector(window.innerWidth, window.innerHeight);
             _this.resolution = new Vector(_this.canvas.width, _this.canvas.height);
@@ -41,20 +33,14 @@ var Game = (function () {
     }
     return Game;
 }());
-/** Class representing a genric game object */
 var GameObject = (function () {
     function GameObject(startX, startY, spriteSheet) {
-        /** function called once, when the object is created */
         this.start = function () { };
-        /**function called every frame */
         this.update = function () {
-            //physics calculations
             this.velocity.add(this.acceleration);
             this.position.add(this.velocity);
         };
-        /** draw's object's sprite to screen */
         this.draw = function () { };
-        /** function called when object is destroyed*/
         this.destroy = function () { };
         this.sprite = new createjs.Sprite(spriteSheet);
         this.position = new Vector(startX, startY);
@@ -64,22 +50,13 @@ var GameObject = (function () {
     }
     return GameObject;
 }());
-/** Class to help with vector math */
 var Vector = (function () {
     function Vector(x, y) {
         var _this = this;
-        /**
-        * Adds another vector to this once
-        * @param other The vector that is added to this one
-        */
         this.add = function (other) {
             _this.x += other.x;
             _this.y += other.y;
         };
-        /**
-        * Multiplies this vector by a scalar coefficient
-        *@param coefficient The number that theis Vecotr is multiplied by
-        */
         this.multiply = function (coefficient) {
             _this.x *= coefficient;
             _this.y *= coefficient;
@@ -89,3 +66,8 @@ var Vector = (function () {
     }
     return Vector;
 }());
+function init() {
+    var canvas = document.getElementById('gameCanvas');
+    canvas.style.background = '#000';
+    var game = new Game(canvas);
+}
