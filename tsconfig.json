@@ -9,8 +9,5 @@
     "exclude":[
         "js",
         "index.html"
-    ],
-    "include":[
-        "typings"
     ]
 }
