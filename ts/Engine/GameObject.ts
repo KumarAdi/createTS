@@ -1,5 +1,8 @@
 /** Class representing a genric game object */
 class GameObject{
+    /** The stage, used for draw calls */
+    private stage:createjs.Stage;
+
     /** The object's graphical representation */
     public sprite: createjs.Sprite
 
@@ -12,11 +15,12 @@ class GameObject{
     /** The object's acceleration, sotred as  a vector */
     public acceleration: Vector;
 
-    constructor(startX: number, startY: number,spriteSheet: createjs.SpriteSheet){
+    constructor(stage:createjs.Stage, startX:number, startY:number, spriteSheet:createjs.SpriteSheet){
+        //initialize parameters
         this.sprite = new createjs.Sprite(spriteSheet);
         this.position = new Vector(startX, startY);
-        this.sprite.x = this.position.x;
-        this.sprite.y = this.position.y;
+        this.stage = stage;
+
         this.start();
     }
 
@@ -31,7 +35,11 @@ class GameObject{
     };
 
     /** draw's object's sprite to screen */
-    private draw = function (){};
+    private draw = function (){
+        this.sprite.x = this.position.x;
+        this.sprite.y = this.position.y;
+        this.stage.addChild(this.sprite);
+    };
 
     /** function called when object is destroyed*/
     public destroy = function (){};

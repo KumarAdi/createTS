@@ -2,9 +2,9 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "module": "commonjs",
+        "module": "amd",
         "target": "ES5",
-        "outDir": "js"
+        "outFile": "js/createTS.js"
     },
     "exclude":[
         "js",
