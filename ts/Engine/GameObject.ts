@@ -1,8 +1,5 @@
 /** Class representing a genric game object */
-class GameObject{
-    /** The stage, used for draw calls */
-    private stage:createjs.Stage;
-
+class GameObject extends Entity{
     /** The object's graphical representation */
     public sprite: createjs.Sprite
 
@@ -15,32 +12,41 @@ class GameObject{
     /** The object's acceleration, sotred as  a vector */
     public acceleration: Vector;
 
-    constructor(stage:createjs.Stage, startX:number, startY:number, spriteSheet:createjs.SpriteSheet){
+    constructor(startX:number, startY:number, spriteSheet?:createjs.SpriteSheet){
+        super();
+
+        //Creates sprite from spritesheet if it's truthy, uses ball if it isn't
+        this.sprite = new createjs.Sprite(spriteSheet || new createjs.SpriteSheet({
+            images: ["http://www.gritengine.com/luaimg/circle.png"],
+            frames: {
+                width: 64,
+                height: 64,
+                count: 1
+            }
+        }));
+
         //initialize parameters
-        this.sprite = new createjs.Sprite(spriteSheet);
         this.position = new Vector(startX, startY);
-        this.stage = stage;
+        this.velocity = new Vector(0,0);
+        this.acceleration = new Vector(0,0);
 
         this.start();
     }
 
-    /** function called once, when the object is created */
-    public start = function (){};
-
     /**function called every frame */
-    public update = function (){
+    public update() {
         //physics calculations
         this.velocity.add(this.acceleration);
         this.position.add (this.velocity);
     };
 
-    /** draw's object's sprite to screen */
-    private draw = function (){
+    /**
+    *Draws object's sprite to screen
+    *@param stage The stage this objject should be drawn to
+    */
+    public draw(stage) {
         this.sprite.x = this.position.x;
         this.sprite.y = this.position.y;
-        this.stage.addChild(this.sprite);
+        stage.addChild(this.sprite);
     };
-
-    /** function called when object is destroyed*/
-    public destroy = function (){};
 }

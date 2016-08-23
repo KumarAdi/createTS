@@ -22,7 +22,7 @@ class Vector{
 
     /**
     * Multiplies this vector by a scalar coefficient
-    *@param coefficient The number that theis Vecotr is multiplied by
+    *@param coefficient The number that theis Vector is multiplied by
     */
     public multiply = (coefficient: number) => {
         this.x *= coefficient;

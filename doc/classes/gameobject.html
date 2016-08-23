@@ -78,7 +78,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">GameObject</span>
+						<a href="entity.html" class="tsd-signature-type">Entity</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">GameObject</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -89,7 +94,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="gameobject.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -98,17 +103,16 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#acceleration" class="tsd-kind-icon">acceleration</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#position" class="tsd-kind-icon">position</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#sprite" class="tsd-kind-icon">sprite</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="gameobject.html#stage" class="tsd-kind-icon">stage</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#velocity" class="tsd-kind-icon">velocity</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#destroy" class="tsd-kind-icon">destroy</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported"><a href="gameobject.html#draw" class="tsd-kind-icon">draw</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#start" class="tsd-kind-icon">start</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="gameobject.html#update" class="tsd-kind-icon">update</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="gameobject.html#destroy" class="tsd-kind-icon">destroy</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="gameobject.html#draw" class="tsd-kind-icon">draw</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported"><a href="gameobject.html#start" class="tsd-kind-icon">start</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported"><a href="gameobject.html#update" class="tsd-kind-icon">update</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,24 +120,22 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<wbr>Object<span class="tsd-signature-symbol">(</span>stage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">createjs.Stage</span>, startX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, spriteSheet<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">createjs.SpriteSheet</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gameobject.html" class="tsd-signature-type">GameObject</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Game<wbr>Object<span class="tsd-signature-symbol">(</span>startX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, spriteSheet<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">SpriteSheet</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gameobject.html" class="tsd-signature-type">GameObject</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overwrites <a href="entity.html">Entity</a>.<a href="entity.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in Engine/GameObject.ts:16</li>
+									<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L13">Engine/GameObject.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
-								<li>
-									<h5>stage: <span class="tsd-signature-type">createjs.Stage</span></h5>
-								</li>
 								<li>
 									<h5>startX: <span class="tsd-signature-type">number</span></h5>
 								</li>
@@ -141,7 +143,7 @@
 									<h5>startY: <span class="tsd-signature-type">number</span></h5>
 								</li>
 								<li>
-									<h5>spriteSheet: <span class="tsd-signature-type">createjs.SpriteSheet</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> spriteSheet: <span class="tsd-signature-type">SpriteSheet</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="gameobject.html" class="tsd-signature-type">GameObject</a></h4>
@@ -157,7 +159,7 @@
 					<div class="tsd-signature tsd-kind-icon">acceleration<span class="tsd-signature-symbol">:</span> <a href="vector.html" class="tsd-signature-type">Vector</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Engine/GameObject.ts:16</li>
+							<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L13">Engine/GameObject.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <a href="vector.html" class="tsd-signature-type">Vector</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Engine/GameObject.ts:10</li>
+							<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L7">Engine/GameObject.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -184,30 +186,15 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="sprite" class="tsd-anchor"></a>
 					<h3>sprite</h3>
-					<div class="tsd-signature tsd-kind-icon">sprite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">createjs.Sprite</span></div>
+					<div class="tsd-signature tsd-kind-icon">sprite<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Sprite</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Engine/GameObject.ts:7</li>
+							<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L4">Engine/GameObject.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The object&#39;s graphical representation</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-					<a name="stage" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> stage</h3>
-					<div class="tsd-signature tsd-kind-icon">stage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">createjs.Stage</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in Engine/GameObject.ts:4</li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The stage, used for draw calls</p>
 						</div>
 					</div>
 				</section>
@@ -217,7 +204,7 @@
 					<div class="tsd-signature tsd-kind-icon">velocity<span class="tsd-signature-symbol">:</span> <a href="vector.html" class="tsd-signature-type">Vector</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in Engine/GameObject.ts:13</li>
+							<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L10">Engine/GameObject.ts:10</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,17 +216,18 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="destroy" class="tsd-anchor"></a>
 					<h3>destroy</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">destroy<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="entity.html">Entity</a>.<a href="entity.html#destroy">destroy</a></p>
 								<ul>
-									<li>Defined in Engine/GameObject.ts:45</li>
+									<li>Defined in Engine/Entity.ts:20</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -251,39 +239,50 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 					<a name="draw" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> draw</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">draw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					<h3>draw</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">draw<span class="tsd-signature-symbol">(</span>stage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overwrites <a href="entity.html">Entity</a>.<a href="entity.html#draw">draw</a></p>
 								<ul>
-									<li>Defined in Engine/GameObject.ts:38</li>
+									<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L47">Engine/GameObject.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>draw&#39;s object&#39;s sprite to screen</p>
+									<p>Draws object&#39;s sprite to screen</p>
 								</div>
 							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stage: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The stage this objject should be drawn to</p>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 					<a name="start" class="tsd-anchor"></a>
 					<h3>start</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">start<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from <a href="entity.html">Entity</a>.<a href="entity.html#start">start</a></p>
 								<ul>
-									<li>Defined in Engine/GameObject.ts:28</li>
+									<li>Defined in Engine/Entity.ts:8</li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -295,17 +294,18 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 					<a name="update" class="tsd-anchor"></a>
 					<h3>update</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 						<li class="tsd-signature tsd-kind-icon">update<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overwrites <a href="entity.html">Entity</a>.<a href="entity.html#update">update</a></p>
 								<ul>
-									<li>Defined in Engine/GameObject.ts:31</li>
+									<li>Defined in <a href="https://github.com/KumarAdi/createTS/blob/443375b/ts/Engine/GameObject.ts#L37">Engine/GameObject.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -330,6 +330,9 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="game.html" class="tsd-kind-icon">Game</a>
 					</li>
 				</ul>
@@ -337,7 +340,7 @@
 					<li class="current tsd-kind-class tsd-is-not-exported">
 						<a href="gameobject.html" class="tsd-kind-icon">Game<wbr>Object</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="gameobject.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
@@ -349,22 +352,19 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="gameobject.html#sprite" class="tsd-kind-icon">sprite</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
-								<a href="gameobject.html#stage" class="tsd-kind-icon">stage</a>
-							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="gameobject.html#velocity" class="tsd-kind-icon">velocity</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="gameobject.html#destroy" class="tsd-kind-icon">destroy</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="gameobject.html#draw" class="tsd-kind-icon">draw</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-not-exported">
 								<a href="gameobject.html#start" class="tsd-kind-icon">start</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-not-exported">
 								<a href="gameobject.html#update" class="tsd-kind-icon">update</a>
 							</li>
 						</ul>
@@ -372,7 +372,16 @@
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="group.html" class="tsd-kind-icon">Group</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
+						<a href="level.html" class="tsd-kind-icon">Level</a>
+					</li>
+					<li class=" tsd-kind-class tsd-is-not-exported">
 						<a href="vector.html" class="tsd-kind-icon">Vector</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="../globals.html#game" class="tsd-kind-icon">game</a>
 					</li>
 					<li class=" tsd-kind-function tsd-is-not-exported">
 						<a href="../globals.html#init" class="tsd-kind-icon">init</a>
